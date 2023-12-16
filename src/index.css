@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+@import url("https://cdn.statically.io/gist/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/fad2f254369fb54250260077a4c87391a6280c52/gotham.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: "Open Sans";
+  }
+  html {
+    @apply text-white;
+  }
+}
+
+@layer components {
+  .header-top-li {
+    @apply text-sm leading-[14px] tracking-[-0.28px] text-black/[0.85] hover:border-b border-b-black;
+  }
+
+  .header-top-li-mobile {
+    @apply text-sm leading-5 text-black/80 flex justify-between items-center;
+  }
+
+  .header-down-li-mobile {
+    @apply py-6 border-b border-[#3d3e40] text-sm leading-[14px];
+  }
+
+  .header-down-li-mobile {
+    @apply py-6 border-b border-[#3d3e40] text-sm leading-[14px];
+  }
+
+  .slider-main-li {
+    @apply hover:text-[#44A8F2] border-b border-b-transparent hover:border-b-[#44A8F2] transition-all duration-500;
+  }
+
+  .slider-main-text {
+    @apply text-center text-sm leading-7 text-[#bebdbd];
+  }
+
+  .slider-main-text label {
+    @apply text-white;
+  }
+
+  .slider-main-text p {
+    @apply 2xl:flex inline gap-2 justify-center items-center;
+  }
+
+  .slider-main-text label {
+    @apply 2xl:inline block;
+  }
+
+  .btn-heder-top-gridient:hover {
+    background-image: linear-gradient(-180deg, #4cb5ff 0%, #1392ed 100%);
+  }
+
+  .container-main {
+    @apply 2xl:w-[1200px] w-full 2xl:p-0 p-4;
+  }
+
+  .bg-objective {
+    background: linear-gradient(to right, #173d71, #0095b0);
+  }
+
+  .list-objective-condition-bar:nth-child(7n-1) {
+    @apply border-r-transparent;
+  }
+
+  .list-objective-mobile-condition-bar:nth-last-child(2) {
+    @apply border-none;
+  }
+
+  .list-objective-mobile-condition-bar:nth-last-child(3) {
+    @apply border-none;
+  }
+
+  .list-accessory-condition-bar:nth-last-child(3n - 3) {
+    @apply border-r border-white/40;
+  }
+
+  .list-accessory-condition-bar:nth-last-child(3n - 2) {
+    @apply border-l border-white/40;
+  }
+}
