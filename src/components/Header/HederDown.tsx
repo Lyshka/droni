@@ -32,11 +32,11 @@ export const HederDown = () => {
             <li>Video</li>
             <li>Downloads</li>
             <li>FAQ</li>
-            <li>
+            {/* <li>
               <button className="bg-[#0070d5] px-[16px] py-[7px] text-sm leading-[14px] rounded-sm">
                 Buy Now
               </button>
-            </li>
+            </li> */}
           </ul>
 
           <button className="bg-[#0070d5] 2xl:px-[16px] px-2 2xl:py-[7px] py-2 2xl:text-sm text-xs 2xl:leading-[14px] leading-3 rounded-sm 2xl:hidden block min-w-[75px]">

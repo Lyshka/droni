@@ -4,7 +4,7 @@ import { IoClose } from "react-icons/io5";
 import { Logo } from "../../assets/img/Logo";
 import { Loupe } from "../../assets/img/Loupe";
 import { Person } from "../../assets/img/Person";
-import { Purchase } from "../../assets/img/Purchase";
+// import { Purchase } from "../../assets/img/Purchase";
 import { Link } from "react-router-dom";
 import { HeaderMobileUp } from "./HeaderMobileUp";
 import { useState } from "react";
@@ -50,12 +50,12 @@ export const HeaderUp = () => {
             <div className="flex items-center gap-5">
               <Loupe className="2xl:block hidden" />
               <Person className="2xl:block hidden" />
-              <button className="px-[13px] h-8 rounded-full 2xl:bg-[#0070D5] bg-black/[0.04] 2xl:border-none border border-black/80 flex items-center gap-[9px] btn-heder-top-gridient">
+              {/* <button className="px-[13px] h-8 rounded-full 2xl:bg-[#0070D5] bg-black/[0.04] 2xl:border-none border border-black/80 flex items-center gap-[9px] btn-heder-top-gridient">
                 <Purchase className="w-3 h-3 2xl:text-white text-black/80" />
                 <span className="2xl:text-white text-black/80 text-sm leading-[14px] tracking-[-0.28px]">
                   Buy
                 </span>
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

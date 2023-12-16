@@ -10,6 +10,7 @@ import { VideoShooting } from "../components/VideoShooting/VideoShooting";
 import { Perfomance } from "../components/Perfomance/Perfomance";
 import { Reliability } from "../components/Reliability/Reliability";
 import { Accessories } from "../components/Accessories/Accessories";
+import { Last } from "../components/Last";
 
 export const Home = () => {
   return (
@@ -26,6 +27,7 @@ export const Home = () => {
       <Perfomance />
       <Reliability />
       <Accessories />
+      <Last />
     </>
   );
 };
