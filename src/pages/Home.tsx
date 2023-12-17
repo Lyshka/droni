@@ -10,7 +10,7 @@ import { VideoShooting } from "../components/VideoShooting/VideoShooting";
 import { Perfomance } from "../components/Perfomance/Perfomance";
 import { Reliability } from "../components/Reliability/Reliability";
 import { Accessories } from "../components/Accessories/Accessories";
-import { Last } from "../components/Last";
+import { Last } from "../components/Last/Last";
 
 export const Home = () => {
   return (
