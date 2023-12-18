@@ -15,6 +15,7 @@ export const ObjectiveMobile = () => {
       <div className="px-4 grid grid-cols-2 relative">
         {list.map(({ title }) => (
           <p
+            key={title}
             className="list-objective-mobile-condition-bar p-2 text-base h-[70px] flex justify-center items-center text-center leading-8 border-b border-[#565656]"
             dangerouslySetInnerHTML={{ __html: title }}
           />
@@ -26,7 +27,10 @@ export const ObjectiveMobile = () => {
 
       <div className="px-4 flex flex-col items-center gap-5">
         {modal.list.map(({ description, title }) => (
-          <div className="flex justify-center items-center flex-col gap-4 border-b border-[#565656] py-[30px]">
+          <div
+            key={title}
+            className="flex justify-center items-center flex-col gap-4 border-b border-[#565656] py-[30px]"
+          >
             <p className="text-lg font-semibold">{title}</p>
 
             <p

@@ -13,7 +13,7 @@ export const ModeMobile = () => {
 
       <div className="flex flex-col gap-4">
         {list.map((part) => (
-          <PartMode part={part} />
+          <PartMode key={part.title} part={part} />
         ))}
       </div>
     </section>

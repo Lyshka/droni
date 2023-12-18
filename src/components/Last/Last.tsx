@@ -18,8 +18,8 @@ export const Last = () => {
           <ul className="flex 2xl:w-[600px] w-full gap-x-4 gap-y-2 flex-wrap items-center justify-center">
             {feature.map(({ title }) => (
               <li
-                className="2xl:text-base text-xs 2xl:p-2 p-1 leading-4 text-[#303233] rounded border-2 border-[#616366] font-semibold whitespace-nowrap"
                 key={title}
+                className="2xl:text-base text-xs 2xl:p-2 p-1 leading-4 text-[#303233] rounded border-2 border-[#616366] font-semibold whitespace-nowrap"
               >
                 {title}
               </li>
@@ -40,7 +40,7 @@ export const Last = () => {
       </div>
       <div className="2xl:py-16 p-4 pt-10 grid 2xl:grid-cols-3 2xl:gap-0 gap-16 grid-cols-1 container-main">
         {list.map((part) => (
-          <div>
+          <div key={part.title}>
             <Part part={part} />
           </div>
         ))}

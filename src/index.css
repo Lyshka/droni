@@ -36,6 +36,10 @@
     @apply hover:text-[#44A8F2] border-b border-b-transparent hover:border-b-[#44A8F2] transition-all duration-500;
   }
 
+  .footer-li li {
+    @apply text-xs leading-6 text-white/[0.85];
+  }
+
   .slider-main-text {
     @apply text-center text-sm leading-7 text-[#bebdbd];
   }

@@ -14,7 +14,7 @@ export const SenseMobile = () => {
       {Img}
       <div className="flex flex-col px-4">
         {list.map(({ title }, idx) => (
-          <p className="text-center leading-6 text-sm">
+          <p key={title} className="text-center leading-6 text-sm">
             {idx + 1}.
             <span dangerouslySetInnerHTML={{ __html: title }} />
           </p>

@@ -1,3 +1,5 @@
+import { Fragment } from "react";
+
 type Objective = {
   title: string;
 };
@@ -18,10 +20,9 @@ export const ListObjective = ({ objective, toggleModal }: IListObjective) => {
       className="grid grid-cols-6 -mt-36 relative z-[1]"
     >
       {objective.map(({ title }, idx) => (
-        <>
+        <Fragment key={title}>
           <p
             className="text-center  h-14 border-r-[#3b9cbc] border-r list-objective-condition-bar flex justify-center items-center font-gotham font-light px-4"
-            key={title}
             dangerouslySetInnerHTML={{ __html: title }}
           />
           {conditionBar(idx) && (
@@ -29,7 +30,7 @@ export const ListObjective = ({ objective, toggleModal }: IListObjective) => {
               &nbsp;
             </div>
           )}
-        </>
+        </Fragment>
       ))}
     </div>
   );
