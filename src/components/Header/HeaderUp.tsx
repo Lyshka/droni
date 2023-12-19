@@ -1,15 +1,19 @@
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoClose } from "react-icons/io5";
 
-import { Logo } from "../../assets/img/Logo";
 import { Loupe } from "../../assets/img/Loupe";
 import { Person } from "../../assets/img/Person";
 // import { Purchase } from "../../assets/img/Purchase";
 import { Link } from "react-router-dom";
 import { HeaderMobileUp } from "./HeaderMobileUp";
 import { useState } from "react";
+import { useHeader } from "../../hooks/useHeader";
+import { usePhoto } from "../../hooks/usePhoto";
 
 export const HeaderUp = () => {
+  const { img } = useHeader();
+  const Img = usePhoto(img, "2xl:h-auto 2xl:w-auto h-[26px] w-[100px]");
+
   const [open, setOpen] = useState(false);
 
   const toggleOpenMenu = () => {
@@ -32,9 +36,7 @@ export const HeaderUp = () => {
             />
           )}
 
-          <Link to={"/"}>
-            <Logo className="2xl:h-auto 2xl:w-auto h-[26px] w-[100px]" />
-          </Link>
+          <Link to={"/"}>{Img}</Link>
           <div className="flex items-center justify-between 2xl:w-full">
             <nav className="2xl:block hidden">
               <ul className="flex items-center gap-6">

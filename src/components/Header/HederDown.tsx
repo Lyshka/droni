@@ -3,8 +3,11 @@ import { IoIosArrowDown } from "react-icons/io";
 import { useState } from "react";
 
 import { HeaderMobileDown } from "./HeaderMobileDown";
+import { useHeader } from "../../hooks/useHeader";
 
 export const HederDown = () => {
+  const { title } = useHeader();
+
   const [open, setOpen] = useState(false);
 
   const toggleOpen = () => {
@@ -16,7 +19,7 @@ export const HederDown = () => {
       <header className="flex h-16 justify-center items-center bg-[#232425] bg-opacity-90 sticky top-0 z-[2]">
         <nav className="container-main flex justify-between items-center">
           <span className="2xl:text-sm text-xs 2xl:leading-normal leading-[18px]">
-            Inspire 2
+            {title}
           </span>
 
           <IoIosArrowDown

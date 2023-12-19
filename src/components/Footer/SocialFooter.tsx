@@ -10,7 +10,7 @@ interface ISocialFooter {
 
 export const SocialFooter = ({ acf }: ISocialFooter) => {
   const { img, url } = acf;
-  const Img = usePhoto(img);
+  const Img = usePhoto(img, "w-4 h-4");
 
   return (
     <Link
